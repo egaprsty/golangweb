@@ -1,0 +1,13 @@
+ {{template "layout" .}}
+ 
+ {{define "main"}}   
+    
+ <!-- Looping -->
+
+ {{range .}}
+    <div class="text box-with-shadow">
+        {{.Name}} - {{.Price}} - {{.StockStatus}}
+    </div>
+ {{end}}
+
+{{end}}
